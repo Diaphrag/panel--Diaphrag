@@ -87,7 +87,7 @@ URL = str(input(color.Red+f"[+] Send Me Your link! [Example ---> https://google.
 
 print(color.Red+"\n[+] Searching Admin Pandel <-->   : "+color.Green+URL)
 time.sleep(2)
-slowprint(color.Red+"      ----> wait! IM Search To Admin Login par...",0.07)
+slowprint(color.Red+"      ----> wait! IM Search To Admin Login page...",0.07)
 with open("Diaphrag.txt","r",encoding="UTF-8") as words:
     for word in words.readlines():
         adminpage = URL+"/"+word.strip("\n")
@@ -96,9 +96,9 @@ with open("Diaphrag.txt","r",encoding="UTF-8") as words:
         except Exception as e:
             print(color.Red+"\n[!] Errored  "+e)
         if rq.status_code == 200:
-            prin
+            print(color.Green+"[+]ok this is admin lohin panel--->  "+color.Blue+adminpage)
             with open("Diaphrag-admin.txt",'a',encoding="UTF-8") as admin:
                 admin.writelines(adminpage+"\n")
-  
-input(color.Red+"\n[+]  Press ( enter )to exit---> ")
 
+input(color.Red+"\n[+]  Press ( enter )to exit---> ")
+#coded by pouriya noei
